@@ -1,0 +1,14 @@
+{
+    "name": "octoenergy-octo_consul",
+    "version": "1.0",
+    "author": "Octopus Energy",
+    "license": "BSD",
+    "summary": "Consul wrapper for Octopus Energy",
+    "source": "https://github.com/octoenergy/puppet-octo_consul",
+    "dependencies": [
+        {
+            "name": "KyleAnderson/consul",
+            "version_requirement": "1.0.3"
+        }
+    ]
+}

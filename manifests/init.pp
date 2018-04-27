@@ -2,6 +2,7 @@ class octo_consul (
     $encrypt_key,
     $datacenter = "eu-west-1",
     $data_dir = "/opt/consul",
+    $init_style = "upstart",
 ) {
     package { "zip":
         ensure => installed    
@@ -20,7 +21,7 @@ class octo_consul (
             "retry_join"    => ["consul.octoenergy.internal"],
         },
         pretty_config   => true,
-        init_style      => "upstart",
+        init_style      => $init_style,
         require         => Package["zip"],
     }
 }

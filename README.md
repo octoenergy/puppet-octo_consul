@@ -1,3 +1,3 @@
-# octo_nginx
+# octo_consul
 
-Nginx Puppet module for Octopus Energy
+Consul Puppet module for Octopus Energy

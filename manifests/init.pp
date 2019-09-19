@@ -1,5 +1,6 @@
 class octo_consul (
     $encrypt_key,
+    $server_address,
     $datacenter = "eu-west-1",
     $data_dir = "/opt/consul",
     $init_style = "upstart",
@@ -16,10 +17,11 @@ class octo_consul (
         service_ensure  => false,
         config_hash     => {
             "data_dir"      => $data_dir,
+            # Note, this doesn't have to be an AWS region name.
             "datacenter"    => $datacenter,
             "log_level"     => "INFO",
             "encrypt"       => $encrypt_key,
-            "retry_join"    => ["consul.octoenergy.internal"],
+            "retry_join"    => [$server_address],
         },
         pretty_config   => true,
         init_style      => $init_style,

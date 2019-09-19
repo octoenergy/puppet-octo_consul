@@ -3,9 +3,10 @@ class octo_consul (
     $datacenter = "eu-west-1",
     $data_dir = "/opt/consul",
     $init_style = "upstart",
+
 ) {
     package { "zip":
-        ensure => installed    
+        ensure => installed
     }
 
     # We set service_ensure to false to avoid Consul starting up when
@@ -24,4 +25,5 @@ class octo_consul (
         init_style      => $init_style,
         require         => Package["zip"],
     }
+    contain ::consul
 }

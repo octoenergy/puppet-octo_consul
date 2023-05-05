@@ -1,6 +1,6 @@
 {
     "name": "octoenergy-octo_consul",
-    "version": "2",
+    "version": "2.0",
     "author": "Octopus Energy",
     "license": "BSD",
     "summary": "Consul wrapper for Octopus Energy",

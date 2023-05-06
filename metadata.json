@@ -1,14 +1,14 @@
 {
-    "name": "octoenergy-octo_consul",
-    "version": "2.0",
-    "author": "Octopus Energy",
-    "license": "BSD",
-    "summary": "Consul wrapper for Octopus Energy",
-    "source": "https://github.com/octoenergy/puppet-octo_consul",
-    "dependencies": [
-        {
-            "name": "puppet/consul",
-            "version_requirement": "7.3.1"
-        }
-    ]
+  "name": "octoenergy-octo_consul",
+  "version": "2.1",
+  "author": "Octopus Energy",
+  "license": "BSD",
+  "summary": "Consul wrapper for Octopus Energy",
+  "source": "https://github.com/octoenergy/puppet-octo_consul",
+  "dependencies": [
+    {
+      "name": "puppet/consul",
+      "version_requirement": "7.3.1"
+    }
+  ]
 }

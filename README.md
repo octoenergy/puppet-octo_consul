@@ -4,6 +4,14 @@ Consul Puppet module for Octopus Energy
 
 ## Change log
 
+### v2.1
+
+- Add module tooling
+
+### v2.0
+
+- Update consul module, therefore puppet version
+
 ### v1.2
 
 - Make the server hostname a parameter.

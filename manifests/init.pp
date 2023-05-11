@@ -9,7 +9,7 @@ class octo_consul (
     ensure => installed,
   }
 
-  # We set service_ensure to false to avoid Consul starting up when
+  # We set service_ensure to 'stopped' to avoid Consul starting up when
   # provisioning the AMI. If it does, then it sets the cluster IP address
   # which causes a problem when a new server is built using the AMI.
   class { 'consul':

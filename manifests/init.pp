@@ -4,15 +4,16 @@ class octo_consul (
   $datacenter = 'eu-west-1',
   $data_dir = '/opt/consul',
   $init_style = 'upstart',
+  $version = '0.5.2',
 ) {
   package { 'zip':
     ensure => installed,
   }
-
   # We set service_ensure to 'stopped' to avoid Consul starting up when
   # provisioning the AMI. If it does, then it sets the cluster IP address
   # which causes a problem when a new server is built using the AMI.
   class { 'consul':
+    version        => $version,
     service_ensure => 'stopped',
     config_hash    => {
       'data_dir'   => $data_dir,

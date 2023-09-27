@@ -4,6 +4,10 @@ Consul Puppet module for Octopus Energy
 
 ## Change log
 
+### v2.2
+
+- Add option for controlling the version of the consul binary downloaded
+
 ### v2.1
 
 - Add module tooling
